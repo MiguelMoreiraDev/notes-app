@@ -12,6 +12,12 @@ export const GlobalStyle = createGlobalStyle`
         min-width: 100%;
         min-height: 100vh;
     }
+
+    body {
+        font-family: "Inter", sans-serif;
+        font-size: 1.6rem;
+        -webkit-font-smoothing: antialiased;
+    }
     
     a {
       text-decoration: none;
@@ -29,6 +35,10 @@ export const GlobalStyle = createGlobalStyle`
 
     button {
       cursor: pointer;
+    }
+
+    label {
+        display: block;
     }
     
     button,

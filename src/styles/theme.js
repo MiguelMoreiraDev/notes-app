@@ -5,6 +5,10 @@ export const theme = {
             primary_dark: "#3a2258",
             primary_light: "#efe9f7",
             primary_background: "#faf8fc",
+            primary_linear_base:
+                "linear-gradient(180deg, #9C6ADB -39.81%, #592F8D 126.85%)",
+            primary_linear_dark:
+                "linear-gradient(180deg, #3A2258 -19.44%, #6B4B95 -19.43%, #2C134D 115.74%)",
         },
         secondary: {
             secondary_base: "#DEDC52",
@@ -22,16 +26,22 @@ export const theme = {
             success_base: "#60D889",
             success_dark: "#1F7F40",
             success_light: "#DAF6E4",
+            success_linear_base:
+                "linear-gradient(180deg, #75EB9E -39.81%, #3CBF69 126.85%)",
         },
         error: {
             error_base: "#CE3A54",
             error_dark: "#5A1623",
             error_light: "#F7DEE3",
+            error_linear_base:
+                "linear-gradient(180deg, #EA7287 -39.81%, #BA2A43 126.85%));",
         },
         warning: {
             warning_base: "#F8C715",
             warning_dark: "#725A03",
             warning_light: "#FDEBAB",
+            warning_linear_base:
+                "linear-gradient(180deg, #FFD747 -39.81%, #E5B60B 126.85%));",
         },
     },
     fonts: {
