@@ -2,10 +2,33 @@
 import React from "react";
 import * as S from "./Styles";
 
-export const Title = ({ children, size, color, weight }) => {
+import {} from "prop-types";
+
+export const Title = ({
+    children,
+    color = "black",
+    size = "text_base",
+    typeColor = "neutral",
+    weight = 400,
+    ...props
+}) => {
     return (
-        <h1 size={size} color={color} weight={weight}>
+        <S.Title
+            color={color}
+            size={size}
+            weight={weight}
+            typeColor={typeColor}
+            {...props}
+        >
             {children}
-        </h1>
+        </S.Title>
     );
 };
+
+// Title.PropTypes = {
+//     children: PropTypes.node.isRequired,
+//     color: PropTypes.string,
+//     size: PropTypes.string,
+//     typeColor: PropTypes.string,
+//     weight: [PropTypes.number, PropTypes.string],
+// };

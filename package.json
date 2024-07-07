@@ -24,6 +24,7 @@
         "eslint-plugin-react-refresh": "^0.4.7",
         "json-server": "^1.0.0-beta.1",
         "lucide-react": "^0.400.0",
+        "prop-types": "^15.8.1",
         "react-router-dom": "^6.24.1",
         "styled-components": "^6.1.11",
         "vite": "^5.3.1",
