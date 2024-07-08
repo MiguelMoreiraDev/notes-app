@@ -1,8 +1,11 @@
 import React from "react";
+import * as S from "./Styles";
 import PropTypes from "prop-types";
 
 export const Error = ({ error }) => {
-    return <p>{error}</p>;
+    return <S.Error>{error}</S.Error>;
 };
 
-Error.propTypes = {};
+Error.propTypes = {
+    error: PropTypes.string,
+};
