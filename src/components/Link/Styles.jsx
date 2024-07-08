@@ -28,7 +28,7 @@ export const LinkToNavigation = styled(Link)`
         font-size: ${theme.fonts.sizes.text_base.fontSize};
         line-height: ${theme.fonts.sizes.text_base.lineHeight};
         font-family: "Inter", sans-serif;
-        font-weight: 600;
+        font-weight: 500;
         text-decoration: underline;
         display: flex;
         gap: 0.4rem;

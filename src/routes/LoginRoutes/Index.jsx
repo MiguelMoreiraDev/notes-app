@@ -10,10 +10,16 @@ export const LoginRoutes = () => {
     return (
         <Routes>
             <Route path="/" element={<Welcome />} />
-            <Route path="/login" element={<LoginForm />} />
-            <Route path="/create-account" element={<LoginCreate />} />
-            <Route path="/lost-password" element={<LoginLostPassword />} />
-            <Route path="/reset-password" element={<LoginResetPassword />} />
+            <Route path="/login/*" element={<LoginForm />} />
+            <Route path="/login/create-account" element={<LoginCreate />} />
+            <Route
+                path="/login/lost-password"
+                element={<LoginLostPassword />}
+            />
+            <Route
+                path="/login/reset-password"
+                element={<LoginResetPassword />}
+            />
         </Routes>
     );
 };

@@ -8,11 +8,12 @@ export const PrimaryButton = ({
     startIcon = false,
     endIcon = false,
     loading = false,
+    ...props
 }) => {
     const ButtonComponent = Buttonsoptions[variant];
 
     return (
-        <ButtonComponent disabled={disabled}>
+        <ButtonComponent disabled={disabled} {...props}>
             {startIcon && <span>{startIcon}</span>}
             {!loading && <p>{children}</p>}
             {endIcon && <span>{endIcon}</span>}
