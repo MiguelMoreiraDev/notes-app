@@ -9,6 +9,9 @@ export const Input = ({
     label,
     type = "text",
     placeholder,
+    value,
+    onChange,
+    onBlur,
 }) => {
     const inputId = useId();
 
@@ -21,6 +24,9 @@ export const Input = ({
                     placeholder={placeholder}
                     id={inputId}
                     error={error}
+                    value={value}
+                    onChange={onChange}
+                    onBlur={onBlur}
                     disabled={disabled}
                 />
                 {icon && <span>{icon}</span>}

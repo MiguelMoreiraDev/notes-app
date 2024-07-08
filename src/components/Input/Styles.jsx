@@ -5,6 +5,12 @@ const modifiers = {
     error: () => css`
         border: 2px solid ${theme.colors.error.base};
 
+        &:focus-within,
+        &:active,
+        &:hover {
+            border-color: ${theme.colors.error.base};
+        }
+
         &::placeholder {
             color: ${theme.colors.error.base};
         }

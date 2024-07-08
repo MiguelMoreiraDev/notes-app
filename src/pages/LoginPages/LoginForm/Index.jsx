@@ -6,8 +6,12 @@ import { Input } from "../../../components/Input/Index";
 import { Link } from "./../../../components/Link/Index";
 import { PrimaryButton } from "./../../../components/Buttons/PrimaryButton/Index";
 import { ArrowRight } from "lucide-react";
+import { useForm } from "../../../hooks/useForm/Index";
 
 export const LoginForm = () => {
+    const email = useForm("email");
+    const password = useForm();
+
     return (
         <S.Container className="animeRight">
             <S.Content className="content">
@@ -34,9 +38,16 @@ export const LoginForm = () => {
                 <S.FormContainer>
                     <Input
                         label="Email Address"
+                        type="email"
                         placeholder={"Example: email@gmail.com"}
+                        {...email}
                     />
-                    <Input label="Password" placeholder={"******"} />
+                    <Input
+                        label="Password"
+                        type="password"
+                        placeholder={"******"}
+                        {...password}
+                    />
                 </S.FormContainer>
                 <Link link={"/login/lost-password"}>Forgot Password</Link>
                 <S.ButtonContainer>
