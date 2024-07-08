@@ -36,12 +36,13 @@ const ButtonPrimaryIconStart = styled.button`
     ${BaseStyle}
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    position: relative;
     span {
         display: flex;
         align-items: center;
-        margin-right: 7.6rem;
-        justify-content: center;
+        position: absolute;
+        left: 2.2rem;
     }
 `;
 
@@ -49,12 +50,13 @@ const ButtonPrimaryIconEnd = styled.button`
     ${BaseStyle}
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
+    position: relative;
     span {
         display: flex;
         align-items: center;
-        margin-left: 7.6rem;
-        justify-content: center;
+        position: absolute;
+        right: 2.2rem;
     }
 `;
 
@@ -63,13 +65,13 @@ const ButtonPrimarySideLeft = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
     span {
         display: flex;
         align-items: center;
-        justify-content: center;
-    }
-    p {
-        margin: 0 2.8rem;
+        position: absolute;
+        left: 8.6rem;
     }
 `;
 
