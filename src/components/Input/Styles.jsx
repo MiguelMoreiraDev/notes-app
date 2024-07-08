@@ -69,8 +69,7 @@ export const Input = styled.input`
 export const Label = styled.label``;
 
 export const Icon = styled.span`
-    ${({ disabled, error }) => css`
+    ${({ disabled }) => css`
         ${disabled && modifiers.disabled}
-        ${error && modifiers.error}
     `}
 `;

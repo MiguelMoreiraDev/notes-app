@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../../styles/theme";
 
 export const Container = styled.section`
     display: flex;
@@ -10,15 +11,20 @@ export const Container = styled.section`
 
 export const Content = styled.div`
     width: 100%;
-    border: 1px solid red;
 `;
 
 export const TitleContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+    margin-bottom: 3.2rem;
 `;
 
-export const FormContainer = styled.div``;
+export const FormContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-bottom: 1.2rem;
+`;
 
 export const ButtonContainer = styled.div``;
