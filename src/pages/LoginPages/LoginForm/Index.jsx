@@ -1,8 +1,9 @@
 import React from "react";
 import * as S from "./Styles";
-import { User2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Title } from "./../../../components/Title/Index";
 import { Input } from "../../../components/Input/Index";
+import { Link } from "./../../../components/Link/Index";
 
 export const LoginForm = () => {
     return (
@@ -29,13 +30,13 @@ export const LoginForm = () => {
                     </Title>
                 </S.TitleContainer>
                 <S.FormContainer>
-                    <Input label="Inout Label" placeholder={"Placeholder"} />
-                    <div>
-                        <label htmlFor=""></label>
-                        <input type="text" />
-                    </div>
-                    <a href="">Link</a>
+                    <Input
+                        label="Email Address"
+                        placeholder={"Example: email@gmail.com"}
+                    />
+                    <Input label="Password" placeholder={"******"} />
                 </S.FormContainer>
+                <Link to="/login/lost-password">Forgot your password?</Link>
                 <S.ButtonContainer>
                     <div>
                         <button>Login</button>
