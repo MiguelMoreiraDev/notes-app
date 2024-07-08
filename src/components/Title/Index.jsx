@@ -1,10 +1,11 @@
 /* eslint-disable react/no-unknown-property */
 import React from "react";
-import * as S from "./Styles";
 
-import {} from "prop-types";
+import PropTypes, { oneOfType } from "prop-types";
+import { TitleOptions } from "./Styles";
 
 export const Title = ({
+    variant = "Title",
     children,
     color = "black",
     size = "text_base",
@@ -12,8 +13,10 @@ export const Title = ({
     weight = 400,
     ...props
 }) => {
+    const TitleComponent = TitleOptions[variant];
+
     return (
-        <S.Title
+        <TitleComponent
             color={color}
             size={size}
             weight={weight}
@@ -21,14 +24,14 @@ export const Title = ({
             {...props}
         >
             {children}
-        </S.Title>
+        </TitleComponent>
     );
 };
 
-// Title.PropTypes = {
-//     children: PropTypes.node.isRequired,
-//     color: PropTypes.string,
-//     size: PropTypes.string,
-//     typeColor: PropTypes.string,
-//     weight: [PropTypes.number, PropTypes.string],
-// };
+Title.propTypes = {
+    children: PropTypes.node.isRequired,
+    color: PropTypes.string,
+    size: PropTypes.string,
+    typeColor: PropTypes.string,
+    weight: oneOfType([PropTypes.number, PropTypes.string]),
+};

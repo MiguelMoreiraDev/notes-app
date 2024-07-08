@@ -3,7 +3,7 @@ export const theme = {
         default: "0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.15)",
     },
     transition: {
-        default: "all 0.7s ease-in-out",
+        default: "all 0.3s ease-in-out",
     },
     colors: {
         primary: {
