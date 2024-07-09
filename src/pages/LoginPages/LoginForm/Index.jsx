@@ -12,6 +12,7 @@ export const LoginForm = () => {
   const email = useForm("email");
   const password = useForm();
 
+
   return (
     <S.Container className="animeRight">
       <S.Content className="content">
@@ -25,7 +26,6 @@ export const LoginForm = () => {
           >
             Let&apos;s Login
           </Title>
-
           <Title
             variant="Subtitle"
             size="text_base"
@@ -38,22 +38,17 @@ export const LoginForm = () => {
         </S.TitleContainer>
         <S.FormContainer>
           <Input
-            label="Email Address"
-            type="email"
-            placeholder={"Example: email@gmail.com"}
             {...email}
+            label="Email Address"
+            placeholder={"Example: email@gmail.com"}
           />
-
-          <Input
-            label="Password"
-            type="password"
-            placeholder={"******"}
+          <Input 
+            label="Password" 
+            placeholder={"******"} 
             {...password}
           />
         </S.FormContainer>
-
         <Link link={"/login/lost-password"}>Forgot Password</Link>
-
         <S.ButtonContainer>
           <PrimaryButton variant="primaryIconEnd" endIcon={<ArrowRight />}>
             Login
