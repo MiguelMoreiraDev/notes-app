@@ -9,19 +9,28 @@ export const Input = ({
     label,
     type = "text",
     placeholder,
+    value,
+    onChange,
+    onBlur,
 }) => {
     const inputId = useId();
 
     return (
         <S.Container>
             {label && <S.Label htmlFor={inputId}>{label}</S.Label>}
-            <S.InputContainer error={error} disabled={disabled}>
+            <S.InputContainer 
+            error={error} 
+            disabled={disabled}
+            >
                 <S.Input
                     type={type}
                     placeholder={placeholder}
                     id={inputId}
                     error={error}
                     disabled={disabled}
+                    value={value}
+                    onChange={onChange}
+                    onBlur={onBlur}
                 />
                 {icon && <span>{icon}</span>}
             </S.InputContainer>
