@@ -85,5 +85,4 @@ export const GlobalStyle = createGlobalStyle`
             transform: translateX(0);
         }    
     }
-
 `;

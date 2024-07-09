@@ -25,6 +25,8 @@ const BaseStyle = css`
         background: ${theme.colors.neutral.base_gray};
         color: ${theme.colors.neutral.light_gray};
         box-shadow: none;
+        transition: none;
+        cursor: not-allowed;
     }
 `;
 
